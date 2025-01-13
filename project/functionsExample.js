@@ -1,14 +1,14 @@
 function setup() {
     createCanvas(600, 600);
    background("pink")
-    eyes(200,200);
+    eye(400,400);
    
  }
  
  function draw() {
  }
  
- function eyes(x,y) {
+ function eye(x,y) {
    //left eye
      fill("white")
     ellipse(x, y, 80, 50);

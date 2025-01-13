@@ -1,22 +1,23 @@
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(600, 600);
+  background('tan');
+    nose(300, 300)
 }
 
 function draw() {
-  background(150, 180, 220);
+}
 
-  fill(150, 20, 20, 130);
-  strokeWeight(4);
-  rect(100, 100, 100, 200, 70);
+function nose(x, y) {
+  //main nose
+    fill('pink');
+    strokeWeight(4)
+  ellipse(x, y, 200, 150);
 
-  fill(245, 194, 10, 180);
-  triangle(200, 200, 130, 250, 250, 290);
+  //left nostril
+    fill('black')
+  ellipse(x-35, y+5, 50, 50)
 
-  fill(68, 17, 237, 130)
-  ellipse(180, 300, 270, 75)
-
-  //text showing mouse coordinates
-  fill(225, 0, 0);
-  Text("("+mouseX + ", " + mouseY+")", 5, 15);
+  //right nostril
+  ellipse(x+35, y+5, 50, 50)
 
 }
